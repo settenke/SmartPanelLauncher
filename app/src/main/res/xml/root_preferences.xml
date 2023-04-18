@@ -1,0 +1,70 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/website_header">
+
+        <SwitchPreferenceCompat
+            app:key="websiteEnabler"
+            app:defaultValue="false"
+            app:title="@string/website_enabler_title" />
+
+        <EditTextPreference
+            app:key="websiteUrl"
+            app:dependency="websiteEnabler"
+            app:title="@string/website_title"
+            app:defaultValue="http://google.com"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_header">
+
+        <EditTextPreference
+            app:key="tempLatitude"
+            app:title="@string/temp_latitude_title"
+            app:defaultValue="47.49"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="tempLongitude"
+            app:title="@string/temp_longitude_title"
+            app:defaultValue="19.04"
+            app:useSimpleSummaryProvider="true" />
+
+        <PreferenceScreen
+            app:title="@string/display_settings_title"
+            app:key="pref_launch_display_settings"
+            app:summary="@string/display_settings_summary"
+            app:useSimpleSummaryProvider="true">
+            <intent
+                android:action="android.settings.DISPLAY_SETTINGS" />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            app:title="@string/system_settings_title"
+            app:key="pref_launch_settings"
+            app:summary="@string/system_settings_summary"
+            app:useSimpleSummaryProvider="true">
+            <intent
+                android:action="android.settings.SETTINGS" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/info_header">
+
+        <PreferenceScreen
+            app:key="developerName"
+            app:title="@string/app_developer_title"
+            app:summary="@string/app_developer"
+            app:useSimpleSummaryProvider="true" />
+
+        <PreferenceScreen
+            app:key="appVersion"
+            app:title="@string/app_version_title"
+            app:summary="v1.0"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

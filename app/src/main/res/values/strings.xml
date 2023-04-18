@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SmartPanelLauncher</string>
+    <string name="hello">Hello</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="website_header">Web dashboard</string>
+    <string name="settings_header">Launcher settings</string>
+    <string name="info_header">About</string>
+
+    <!-- Web dashboard Preferences -->
+    <string name="website_enabler_title">Enable web dashboard</string>
+    <string name="website_title">Dashboard url</string>
+
+    <!-- Launcher settings Preferences -->
+    <string name="temp_unit_title">Temperature unit</string>
+    <string name="temp_latitude_title">Latitude for weather</string>
+    <string name="temp_longitude_title">Longitude for weather</string>
+    <string name="display_settings_title">Display settings</string>
+    <string name="system_settings_title">System settings</string>
+    <string name="display_settings_summary">Open device display setting</string>
+    <string name="system_settings_summary">Open device settings</string>
+
+    <string name="app_developer_title">Developer</string>
+    <string name="app_developer">DIYSmartHome.hu</string>
+    <string name="app_version_title">Launcher version</string>
+
+    <string name="weather_icon_description">Weather icon</string>
+
+    <!-- Widgets -->
+    <string name="menu_insert_widget_label">Add Widget</string>
+    <string name="group_search">Search</string>
+
+    <string name="menu_remove_widget_label">Remove Widget</string>
+    <string name="no_widgets_popup">Add widgets first</string>
+    <string name="widget_removed_popup">The widget was removed!</string>
+    <string name="app_help">Touch menu to add/remove widgets.</string>
+</resources>
